@@ -1,4 +1,4 @@
-// C++ program to detect loop in a linked list
+// C++ program to clone a link list which has jump pointer and  next pointer
 #include<bits/stdc++.h>
 #include<unordered_map>
 using namespace std;
@@ -26,30 +26,6 @@ void push(struct Node** head_ref, int new_data)
     (*head_ref)    = new_node;
 }
  
-// Returns true if there is a loop in linked list
-// else returns false.
-/*bool detectLoop(struct Node *h)
-{
-    unordered_set<Node *> s;
-    while (h != NULL)
-    {
-        // If we have already has this node
-        // in hashmap it means their is a cycle
-        // (Because you we encountering the
-        // node second time).
-        if (s.find(h) != s.end())
-            return true;
- 
-        // If we are seeing the node for
-        // the first time, insert it in hash
-        s.insert(h);
- 
-        h = h->next;
-    }
- 
-    return false;
-}
-*/ 
 void copylist(struct Node* head1, struct Node** head2){
 
 	if(head1==NULL)
