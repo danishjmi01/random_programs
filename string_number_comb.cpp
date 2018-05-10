@@ -13,11 +13,6 @@ aaw // a= 1, a =1, w= 23
 kw // k = 11, w = 23
 
 */
-
-
-
-
-
 #include <vector>
 #include <iostream>
 
